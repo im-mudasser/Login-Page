@@ -10,7 +10,14 @@
   </head>
   <body>
     <div class="container">
-      <div class="main-header">
+      <header class="main-header">
+        <img
+          src="img/noa-img.PNG"
+          alt="noa-img"
+          height="42px"
+          width="42px"
+          id="noa-img"
+        />
         <nav>
           <a href="#">HOME</a>
           <a href="#">TALENT</a>
@@ -18,20 +25,36 @@
           <a href="#">ABOUT</a>
           <a href="#">CONTACT</a>
         </nav>
-      </div>
-      <div class="section">
-        <div>
-          <img src="img/side-img.PNG" alt="img" />
+        <div class="logo-container">
+          <div class="logo-img">
+            <img
+              src="img/instagram.png"
+              alt="insta-logo"
+              height="42px"
+              width="42px"
+            />
+            <img
+              src="img/linkedin.png"
+              alt="linkedin-logo"
+              height="42px"
+              width="42px"
+            />
+          </div>
         </div>
+      </header>
 
-        <form action="">
-          <h1>Are you a <em>company</em></h1>
+      <div class="section">
+        <img src="img/side-img.PNG" alt="img" class="side-img" />
+
+        <form action="" class="form-section">
+          <h1>Are you a <em>company?</em></h1>
           <label for="cName">Company Name </label><br />
           <input
             type="text"
             id="cName"
             name="cName"
             placeholder="Company Name"
+            class="glowing-border"
           /><br />
 
           <label for="name">Your Name </label><br />
@@ -40,6 +63,7 @@
             id="Name"
             name="Name"
             placeholder="Your Name"
+            class="glowing-border"
           /><br />
 
           <!-- for email -->
@@ -50,6 +74,7 @@
             id="eMail"
             name="eMail"
             placeholder="Email"
+            class="glowing-border"
           /><br />
 
           <!-- for phone -->
@@ -60,21 +85,29 @@
             id="phone"
             name="phone"
             placeholder="Phone"
+            class="glowing-border"
           /><br />
 
           <!-- for message -->
 
           <label for="message">Message </label><br />
-          <textarea name="message" id="msg-area" cols="30" rows="10"></textarea
+          <textarea
+            name="message"
+            id="msg-area"
+            placeholder="Message"
+            class="glowing-border"
+          ></textarea
           ><br />
           <!-- for button -->
-          <button type="submit">Register</button>
+          <button type="submit">SEND</button>
         </form>
       </div>
     </div>
     <footer>
       <p>AVISO LEGAL</p>
+      <p>|</p>
       <p>INFO@NOATHEAGENCY.COM</p>
+      <p>|</p>
       <p>ACCESO A EMPRESAS</p>
     </footer>
   </body>
