@@ -11,7 +11,7 @@ body {
 
 .main-header {
   display: flex;
-  /* display: inline-block; */
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
@@ -19,12 +19,15 @@ body {
 }
 
 a:link {
-  flex: 1;
+  /* flex: 1; */
   margin-right: 30px;
   text-decoration: none;
   color: #1098ad;
   display: inline-block;
-  padding: 15px 15px;
+  padding: 5px 5px;
+}
+a:link:last-child {
+  margin-right: 0;
 }
 a:visited {
   color: #1098ad;
@@ -35,16 +38,11 @@ a:hover {
   color: orangered;
 }
 
-.logo-container {
-  display: flex;
-  gap: 30px;
+.logo-img-container {
+  padding-right: 6px;
 }
 .logo-img {
-  flex: 1;
-}
-
-#noa-img {
-  margin-left: 50px;
+  margin-right: 10px;
 }
 
 .section {
@@ -56,6 +54,7 @@ a:hover {
 
 .form-section {
   flex: 1;
+  padding-left: 33px;
   margin-top: 50px;
 }
 .side-img {
@@ -99,6 +98,7 @@ textarea {
 
 button {
   margin-top: 20px;
+  margin-bottom: 20px;
   padding: 10px 20px;
   background-color: black;
   color: white;
